@@ -15,18 +15,42 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
     integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
+
+  <style>
+    body {
+      margin: 0px;
+      height: 100vh;
+      width: 100vw;
+      background-color: #2f1c54;
+      background-image: url("https://uploads-ssl.webflow.com/620270d95328b682c53a22b8/620f22791c9f76752e9718cd_bodyBg.svg");
+      color: white;
+    }
+
+    body>div {
+      height: auto;
+      min-height: auto;
+      background-image: url("https://uploads-ssl.webflow.com/620270d95328b682c53a22b8/620b82dccf61260520dce02a_hero-bg.png");
+      background-position: 0% 0%;
+      background-size: 100% 1100px;
+      background-repeat: no-repeat;
+      padding: 24px;
+    }
+  </style>
 </head>
 
 <body>
-  <p>\(FNR = \frac{F_n}{F_n + T_p}\)</p>
-  <p>\(FPR = \frac{F_p}{F_p + T_n}\)</p>
-  <p>\(TPR = \frac{T_p}{T_p + F_n}\)</p>
-  <p>\(TNR = \frac{T_n}{T_n + F_p}\)</p>
+  <div>
+    <h1>ML Evaluation Cheatsheet</h1>
+    <p>\(FNR = \frac{F_n}{F_n + T_p}\)</p>
+    <p>\(FPR = \frac{F_p}{F_p + T_n}\)</p>
+    <p>\(TPR = \frac{T_p}{T_p + F_n}\)</p>
+    <p>\(TNR = \frac{T_n}{T_n + F_p}\)</p>
 
-  <p>\(P = \frac{T_p}{T_p + F_p}\)</p>
-  <p>\(R = \frac{T_p}{T_p + F_n}\)</p>
-  <p>\(F_1 = 2\frac{P \times R}{P + R}\)</p>
-  <p>\(Accuracy = \frac{T_p + T_n}{T_p + T_n + F_p + F_n}\)</p>
+    <p>\(P = \frac{T_p}{T_p + F_p}\)</p>
+    <p>\(R = \frac{T_p}{T_p + F_n}\)</p>
+    <p>\(F_1 = 2\frac{P \times R}{P + R}\)</p>
+    <p>\(Accuracy = \frac{T_p + T_n}{T_p + T_n + F_p + F_n}\)</p>
+  </div>
 </body>
 
 </html>
