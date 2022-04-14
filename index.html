@@ -18,6 +18,7 @@
 
   <style>
     body {
+      font-family: "DM Sans", sans-serif;
       margin: 0px;
       height: 100vh;
       width: 100vw;
@@ -40,33 +41,46 @@
     a {
       color: white
     }
+
+    .section {
+      padding-bottom: 24px;
+    }
   </style>
 </head>
 
 <body>
   <div>
+    <a href="https://kolena.io" aria-current="page" class="brand-2 w-nav-brand w--current" aria-label="home"><img
+        src="https://uploads-ssl.webflow.com/620270d95328b682c53a22b8/6202795480bbb3ab05e5af68_logo.svg" loading="eager"
+        alt="Kolena">
+    </a>
     <h1>ML Evaluation Cheatsheet</h1>
-    <h2>Classification</h2>
-    <p>\(FNR = \frac{F_n}{F_n + T_p}\) (False Negative Rate)</p>
-    <p>\(FPR = \frac{F_p}{F_p + T_n}\) (False Positive Rate)</p>
-    <p>\(TPR = \frac{T_p}{T_p + F_n}\) (True Positive Rate)</p>
-    <p>\(TNR = \frac{T_n}{T_n + F_p}\) (True Negative Rate)</p>
+    <div class="section">
+      <h2>Classification</h2>
+      <p>\(FNR = \frac{F_n}{F_n + T_p}\) (False Negative Rate)</p>
+      <p>\(FPR = \frac{F_p}{F_p + T_n}\) (False Positive Rate)</p>
+      <p>\(TPR = \frac{T_p}{T_p + F_n}\) (True Positive Rate)</p>
+      <p>\(TNR = \frac{T_n}{T_n + F_p}\) (True Negative Rate)</p>
 
-    <p>\(P = \frac{T_p}{T_p + F_p}\) (Precision)</p>
-    <p>\(R = \frac{T_p}{T_p + F_n}\) (Recall)</p>
-    <p>\(F_1 = 2\frac{P \times R}{P + R}\) (F1 Score)</p>
-    <p>\(ACC = \frac{T_p + T_n}{T_p + T_n + F_p + F_n}\) (Accuracy)</p>
+      <p>\(P = \frac{T_p}{T_p + F_p}\) (Precision)</p>
+      <p>\(R = \frac{T_p}{T_p + F_n}\) (Recall)</p>
+      <p>\(F_1 = 2\frac{P \times R}{P + R}\) (F1 Score)</p>
+      <p>\(ACC = \frac{T_p + T_n}{T_p + T_n + F_p + F_n}\) (Accuracy)</p>
+    </div>
 
-    <h2>Landmark Detection</h2>
-    <p>\(NME_k = \frac{1}{N_L} \sum_{i=1}^{N_L} \frac{\text{\textbardbl} p_i - \^p_i \text{\textbardbl}_2 }{d} \)
-      (Normalized Mean Error)</p>
-    <p>\(NME = \frac{1}{K} \sum_{k=1}^{K} NME_k \) (Mean Normalized Mean Error)</p>
-    <p>\(FR = \frac{1}{K} \sum_{k=1}^{K} [NME_k \ge Threshold]\) (Failure Rate)</p>
+    <div class="section">
+      <h2>Landmark Detection</h2>
+      <p>\(NME_k = \frac{1}{N_L} \sum_{i=1}^{N_L} \frac{\text{\textbardbl} p_i - \^p_i \text{\textbardbl}_2 }{d} \)
+        (Normalized Mean Error)</p>
+      <p>\(NME = \frac{1}{K} \sum_{k=1}^{K} NME_k \) (Mean Normalized Mean Error)</p>
+      <p>\(FR = \frac{1}{K} \sum_{k=1}^{K} [NME_k \ge Threshold]\) (Failure Rate)</p>
 
-    <p>* \(K = \) Number of samples</p>
-    <p>* \(N_L = \) Number landmarks on sample</p>
-    <p><a href="https://arxiv.org/ftp/arxiv/papers/2101/2101.10808.pdf">References</a></p>
+      <p>* \(K = \) Number of samples</p>
+      <p>* \(N_L = \) Number landmarks on sample</p>
+      <p><a href="https://arxiv.org/ftp/arxiv/papers/2101/2101.10808.pdf">References</a></p>
+    </div>
 
+    <p>© 2022 Kolena. All rights reserved</p>
   </div>
 </body>
 

@@ -1,11 +1,12 @@
 # Kolena Cheatsheet
 
-Quick reference guide for equations used in ML model evaluation.
+Quick reference guide for equations and concepts used in ML model evaluation.
 [katex](https://katex.org/) is used to render equations.
+PRs and contributions are always welcome!
 
-Running the page on a web server:
+To run the page locally, start up a web server. For instance:
 
-```
+```zsh
 npm -g install http-server
 http-server
 ```
