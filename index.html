@@ -50,6 +50,16 @@
     <p>\(R = \frac{T_p}{T_p + F_n}\) (Recall)</p>
     <p>\(F_1 = 2\frac{P \times R}{P + R}\) (F1 Score)</p>
     <p>\(ACC = \frac{T_p + T_n}{T_p + T_n + F_p + F_n}\) (Accuracy)</p>
+
+    <h2>Landmark Detection</h2>
+    <p>\(NME_k = \frac{1}{N_L} \sum_{i=1}^{N_L} \frac{\text{\textbardbl} p_i - \^p_i \text{\textbardbl}_2 }{d} \)
+      (Normalized Mean Error)</p>
+    <p>\(NME = \frac{1}{K} \sum_{k=1}^{K} NME_k \) (Mean Normalized Mean Error)</p>
+    <p>\(FR = \frac{1}{K} \sum_{k=1}^{K} [NME_k \ge Threshold]\) (Failure Rate)</p>
+
+    <p>* \(K = \) Number of samples</p>
+    <p>* \(N_L = \) Number landmarks on sample</p>
+
   </div>
 </body>
 
