@@ -24,16 +24,21 @@
       background-color: #2f1c54;
       background-image: url("https://uploads-ssl.webflow.com/620270d95328b682c53a22b8/620f22791c9f76752e9718cd_bodyBg.svg");
       color: white;
+      overflow-x: hidden;
     }
 
     body>div {
       height: auto;
-      min-height: auto;
+      min-height: calc(100% - 48px);
       background-image: url("https://uploads-ssl.webflow.com/620270d95328b682c53a22b8/620b82dccf61260520dce02a_hero-bg.png");
       background-position: 0% 0%;
       background-size: 100% 1100px;
       background-repeat: no-repeat;
       padding: 24px;
+    }
+
+    a {
+      color: white
     }
   </style>
 </head>
@@ -41,6 +46,7 @@
 <body>
   <div>
     <h1>ML Evaluation Cheatsheet</h1>
+    <h2>Classification</h2>
     <p>\(FNR = \frac{F_n}{F_n + T_p}\) (False Negative Rate)</p>
     <p>\(FPR = \frac{F_p}{F_p + T_n}\) (False Positive Rate)</p>
     <p>\(TPR = \frac{T_p}{T_p + F_n}\) (True Positive Rate)</p>
@@ -59,6 +65,7 @@
 
     <p>* \(K = \) Number of samples</p>
     <p>* \(N_L = \) Number landmarks on sample</p>
+    <p><a href="https://arxiv.org/ftp/arxiv/papers/2101/2101.10808.pdf">References</a></p>
 
   </div>
 </body>
